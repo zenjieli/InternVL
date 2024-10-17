@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Infer InternVL-1B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "infer.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/internvl_chat",
+        },
+        {
+            "name": "Merge InternVL-1B",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "merge_lora.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/internvl_chat",
+            "args": [
+                "work_dirs/internvl_chat_v2_0/internvl2_1b_qwen2_0_5b_dynamic_res_2nd_finetune_lora",
+                "work_dirs/internvl_chat_v2_0/internvl2_1b_qwen2_0_5b_dynamic_res_2nd_finetune_lora_merged"
+            ]
+        }
+    ]
+}
